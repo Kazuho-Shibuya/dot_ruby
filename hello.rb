@@ -11,3 +11,9 @@ puts 'hel\nlo worl\td'
 name = 'taguchi'
 puts "hello #{name}"
 puts 'hello #{name}'
+p name.empty? # false
+p name.include?('g') # true
+puts name.upcase # TAGUCHI
+puts name # taguchi
+puts name.upcase! # TAGUCHI
+puts name # TAGUCHI
