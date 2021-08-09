@@ -21,3 +21,6 @@ puts name # TAGUCHI
 # ハッシュ
 scores = { taguchi: 200, fkoji: 400 }
 p scores[:taguchi]
+
+# %記号
+p %w[red blue] # シングルクォーテーションと同様
