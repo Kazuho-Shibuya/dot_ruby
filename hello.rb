@@ -17,3 +17,7 @@ puts name.upcase # TAGUCHI
 puts name # taguchi
 puts name.upcase! # TAGUCHI
 puts name # TAGUCHI
+
+# ハッシュ
+scores = { taguchi: 200, fkoji: 400 }
+p scores[:taguchi]
