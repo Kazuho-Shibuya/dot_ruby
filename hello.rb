@@ -24,3 +24,5 @@ p scores[:taguchi]
 
 # %記号
 p %w[red blue] # シングルクォーテーションと同様
+
+p format('id: %05d, rate: %10.2f', 355, 3.284)
