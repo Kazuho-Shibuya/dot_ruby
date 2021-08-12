@@ -26,3 +26,10 @@ p scores[:taguchi]
 p %w[red blue] # シングルクォーテーションと同様
 
 p format('id: %05d, rate: %10.2f', 355, 3.284)
+
+# 次のルーブにスキップ
+10.times do |i|
+  next if i == 7
+
+  p i
+end
