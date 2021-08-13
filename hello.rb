@@ -33,3 +33,11 @@ p format('id: %05d, rate: %10.2f', 355, 3.284)
 
   p i
 end
+
+# メソッド
+
+def sayHi(name)
+  puts "hi! #{name}"
+end
+
+sayHi 'taguchi'
