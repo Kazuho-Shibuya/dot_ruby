@@ -36,8 +36,9 @@ end
 
 # メソッド
 
-def sayHi(name)
-  puts "hi! #{name}"
+def sayHi(name = 'tom')
+  "hi! #{name}"
 end
 
-sayHi 'taguchi'
+p sayHi 'taguchi'
+p sayHi
