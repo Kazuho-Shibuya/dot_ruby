@@ -34,11 +34,13 @@ p format('id: %05d, rate: %10.2f', 355, 3.284)
   p i
 end
 
-# メソッド
-
-def sayHi(name = 'tom')
-  "hi! #{name}"
+# クラス
+class User
+  # メソッド
+  def sayHi(name = 'tom')
+    "hi! #{name}"
+  end
 end
 
-p sayHi 'taguchi'
-p sayHi
+taguchi = User.new
+p taguchi.sayHi
