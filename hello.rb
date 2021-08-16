@@ -36,11 +36,16 @@ end
 
 # クラス
 class User
+  # newが呼ばれた時に呼ばれる
+  def initialize(name)
+    @name = name
+  end
+
   # メソッド
-  def sayHi(name = 'tom')
-    "hi! #{name}"
+  def sayHi
+    "hi! i am #{@name}"
   end
 end
 
-taguchi = User.new
-p taguchi.sayHi
+tom = User.new('tom')
+p tom.sayHi
