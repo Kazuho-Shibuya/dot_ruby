@@ -36,6 +36,12 @@ end
 
 # クラス
 class User
+  # 外部からインスタンス変数にアクセスする場合
+  attr_accessor :name
+
+  # name=(value)
+  # name
+
   # newが呼ばれた時に呼ばれる
   def initialize(name)
     @name = name
@@ -48,4 +54,6 @@ class User
 end
 
 tom = User.new('tom')
+tom.name = 'tom Jr.'
+p tom.name
 p tom.sayHi
