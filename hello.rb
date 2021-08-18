@@ -49,7 +49,8 @@ class User
 
   # メソッド
   def sayHi
-    "hi! i am #{@name}"
+    # self.name -> @name
+    "hi! i am #{name}"
   end
 end
 
