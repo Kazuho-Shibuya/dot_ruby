@@ -52,9 +52,15 @@ class User
     # self.name -> @name
     "hi! i am #{name}"
   end
+
+  # クラスメソッド
+  def self.info
+    puts 'User class'
+  end
 end
 
 tom = User.new('tom')
 tom.name = 'tom Jr.'
 p tom.name
 p tom.sayHi
+User.info
