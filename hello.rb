@@ -42,8 +42,11 @@ class User
   # name=(value)
   # name
 
+  @@count = 0
+
   # newが呼ばれた時に呼ばれる
   def initialize(name)
+    @@count += 1
     @name = name
   end
 
@@ -55,12 +58,12 @@ class User
 
   # クラスメソッド
   def self.info
-    puts 'User class'
+    puts "User class, #{@@count} instances."
   end
 end
 
 tom = User.new('tom')
-tom.name = 'tom Jr.'
-p tom.name
-p tom.sayHi
+bob = User.new('bob')
+steve = User.new('steve')
+
 User.info
