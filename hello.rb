@@ -42,6 +42,7 @@ class User
   # name=(value)
   # name
 
+  VERSION = 1.1
   @@count = 0
 
   # newが呼ばれた時に呼ばれる
@@ -58,7 +59,7 @@ class User
 
   # クラスメソッド
   def self.info
-    puts "User class, #{@@count} instances."
+    puts "#{VERSION}: User class, #{@@count} instances."
   end
 end
 
@@ -67,3 +68,4 @@ bob = User.new('bob')
 steve = User.new('steve')
 
 User.info
+p User::VERSION
