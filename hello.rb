@@ -54,7 +54,7 @@ class User
   # メソッド
   def sayHi
     # self.name -> @name
-    "hi! i am #{name}"
+    puts "hi! i am #{name}"
   end
 
   # クラスメソッド
@@ -69,3 +69,14 @@ steve = User.new('steve')
 
 User.info
 p User::VERSION
+
+# クラスの継承
+class AdminUser < User
+  def sayHello
+    puts "Hello from #{@name}"
+  end
+end
+
+tom = AdminUser.new('tom')
+tom.sayHi
+tom.sayHello
