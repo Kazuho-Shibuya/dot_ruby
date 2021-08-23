@@ -75,6 +75,12 @@ class AdminUser < User
   def sayHello
     puts "Hello from #{@name}"
   end
+
+  # メソッド
+  def sayHi
+    # オーバーライド
+    puts 'hi! i from admin'
+  end
 end
 
 tom = AdminUser.new('tom')
