@@ -61,6 +61,12 @@ class User
   def self.info
     puts "#{VERSION}: User class, #{@@count} instances."
   end
+
+  private
+
+  def sayPrivate
+    puts 'private'
+  end
 end
 
 tom = User.new('tom')
@@ -80,6 +86,7 @@ class AdminUser < User
   def sayHi
     # オーバーライド
     puts 'hi! i from admin'
+    sayPrivate
   end
 end
 
