@@ -130,3 +130,16 @@ end
 
 Player.new.info
 Monster.new.info
+
+# 例外
+x = gets.to_i
+
+begin
+  p 100 / x
+rescue StandardError => e
+  p e.message
+  p e.class
+  puts 'stop'
+ensure
+  puts '-- END --'
+end
