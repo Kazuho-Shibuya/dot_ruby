@@ -134,8 +134,14 @@ Monster.new.info
 # 例外
 x = gets.to_i
 
+class MyError < StandardError; end
+
 begin
+  raise MyError if x == 3
+
   p 100 / x
+rescue MyError
+  puts 'not 3!'
 rescue StandardError => e
   p e.message
   p e.class
